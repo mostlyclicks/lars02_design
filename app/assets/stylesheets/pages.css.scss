@@ -1,3 +1,199 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables.css.scss";
+$robo-slab:"'Roboto Slab', serif";
+
+body {
+  background-color:lighten($light-brown, 45%);
+}
+
+#top {
+  // background:url(/assets/top_bg.gif) 0 0 repeat-x;
+  background-color:lighten($light-brown, 40%);
+  height:60px;
+  width:100%;
+  margin:0;
+  padding:0;
+  position:relative;
+
+  img {
+    position:absolute;
+    top:18px;
+    z-index:20;
+  } .navigation {
+    position:absolute;
+    height:40px;
+    top:60px;
+    background-color:lighten($dark_blue, 10%);
+    width:100%;
+    z-index:10;
+  }
+} 
+
+ul.nav {height:40px;margin:0;padding:0;line-height:40px;font-family:'Roboto Slab', serif;font-weight:700;}
+.navbar-nav>li>a {
+        padding-top: 9px;
+        padding-bottom: 15px
+    }
+
+
+h1, h2, h3, p {font-family:'Roboto Slab', serif;}
+
+
+.top-padding-20 {
+  padding-top:20px;
+}
+
+.top-padding-40 {
+  padding-top:40px;
+}
+
+.yellow-link {
+  color:$yellow;
+  &:hover {
+    color:#ffffff;
+  }
+}
+
+
+.product-top {
+  background-image:url(/assets/product_bg2.jpg);
+  background-color:$red-brown;
+  color:$white;
+  background-repeat:no-repeat;
+  background-position-x:50%;
+  background-position-y:40%;
+
+  border-bottom:1px dotted $light-brown;
+ h1 {font-size:4em;padding-top:.5em;}
+ h3 {padding-top:30px;}
+ a {color:lighten($red-brown, 30%);}
+}
+
+
+#products-header {
+    min-height:170px;
+  margin-top:-20px;
+  margin-bottom:40px;
+
+
+ }
+
+ #products-detail {
+          min-height:100px;
+  margin-top:-20px;
+  margin-bottom:40px;
+  background-position-y:60%;
+  h1 {font-size:3em;padding-top:0;}
+  p {margin-top:27px;}
+
+
+ }
+
+
+
+ .prod-headline {text-align:center !important;}
+
+
+
+
+.products {
+  background-color:lighten($secondary-bg, 58%);
+  min-height:360px;
+  padding:60px 0;
+  border-bottom:1px dotted lighten($light-brown, 30%);
+  
+  img {
+    border:7px solid lighten($med-blue, 55%);
+    opacity:0.8;
+    margin-bottom:1px;
+    margin-top:12px;
+  } small {
+    text-align:center;
+    text-transform: uppercase;
+    font-size:70%;
+    font-weight:700;
+  } 
+}
+
+.products-list {
+
+  h3 {margin-top:10px;}
+  ul {margin-left:0;padding-left:0;list-style:none;}
+  .product {min-height:250px;}
+
+}
+
+.prod-right-nav {
+  h2 {color:lighten($med-blue, 20%);}
+  ul.nav.nav-pills li a {
+    background-color:lighten($med-blue, 55%);
+    color:lighten($red-brown, 10%);
+    padding:0 1em;
+    &:hover {
+      background-color:lighten($med-blue, 40%);
+    }
+  }
+}
+
+#prod-grid {
+    text-align: center;
+    height:auto;
+  }
+
+.info-tabs {
+  margin-top:40px;
+}
+
+.specs {
+  min-height:200px;
+  background-color:#ffffff;
+  border-right:1px solid #ddd;
+  border-left:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+}
+
+
+
+.navbar {
+  border-radius:0 !important;
+  height:30px;
+  margin:0;
+  padding:0;
+  box-shadow:none;
+  background:transparent !important;
+  border:none !important;
+}
+
+.navbar-collapse {
+  text-align:right;
+}
+
+#pre-footer {
+  background-color:$dark-blue;
+  min-height:250px;
+  margin-top:-1px;
+  color:darken(#ffffff, 36%);
+  h3 {
+    color:darken(#ffffff, 18%);;
+  }
+}
+
+.bucket {
+  width:100%;
+  height:200px;
+  // border:5px solid lighten($med-blue, 52%);
+  // padding:20px;
+  margin-bottom:20px;
+
+}
+
+.footer {
+  background-color:lighten($light-brown, 45%);
+  min-height:100px;
+  padding-bottom:20px;
+  color:lighten(#000000, 40%)
+
+}
+
+

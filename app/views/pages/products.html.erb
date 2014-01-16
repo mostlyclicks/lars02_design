@@ -1,2 +1,57 @@
-<h1>Pages#products</h1>
-<p>Find me in app/views/pages/products.html.erb</p>
+<div class="products products-list">
+
+  <div class="product-top" id="products-header">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+            <h1>Products</h1>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-4" class="prod-headline">
+                <h3>Made in the USA</h3>
+              </div>
+              <div class="col-md-4" class="prod-headline">
+                <h3>3 Day Shipping</h3>
+              </div>
+              <div class="col-md-4" class="prod-headline">
+                <h3>Custom Design</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p>Browse our selection of products. Ready to ship, made in the US quality and personal service. If you don't find what you are looking for, please contact us. Phone: (815) 625-0503 or <a href="mailto:example@larsonhardware.com">email</a>.</p>
+
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+      <%= render 'product_list_product' %>
+    </div>
+  </div>
+
+</div>
+
+
+<%= render 'ribbon' %>
+<%= render 'pre_footer' %>

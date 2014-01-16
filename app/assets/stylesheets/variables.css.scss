@@ -1,0 +1,66 @@
+ $secondary-bg:#726b59;
+//$secondary-bg:#ffffff;
+
+$dark-blue:#293038;
+//$dark-blue:#cdcdcd;
+$med-blue:#505a69;
+$dark-brown:#4f4437;
+$light-brown:#726b59;
+$red-brown:#b05842;
+$yellow:#e5b140;
+$white:#ffffff;
+
+
+$bgDefault      : #b05842;
+$bgHighlight    : #4f4437;
+$colDefault     : #ffffff;
+$colHighlight   : #e5b140;
+
+
+
+.navbar-default {
+    background-color: $bgDefault;
+    border-color: $bgHighlight;
+    .navbar-brand {
+        color: $colDefault;
+        &:hover, &:focus {
+            color: $colHighlight; }}
+    .navbar-nav {
+        > li {
+            > a {
+                color: $colDefault;
+                &:hover, &:focus {
+                    color: $colHighlight;   }}}
+        .active {
+            > a, > a:hover, > a:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}
+        .open {
+            > a, > a:hover, > a:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight;
+                .caret {
+                    border-top-color: $colHighlight;
+                    border-bottom-color: $colHighlight; }}}
+        > .dropdown {
+            > a {
+                .caret {
+                    border-top-color: $colDefault;
+                    border-bottom-color: $colDefault; }
+                &:hover, &:focus {
+                    .caret {
+                        border-top-color: $colHighlight;
+                        border-bottom-color: $colHighlight; }}}}}
+    .navbar-toggle {
+        border-color: $bgHighlight;
+        &:hover, &:focus {
+            background-color: $bgHighlight; }
+        .icon-bar {
+            background-color: $colDefault; }}}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: $colDefault;
+        &:hover, &:focus {
+            color: $colHighlight;
+            background-color: $bgHighlight; }}
+}

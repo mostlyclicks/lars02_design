@@ -1,2 +1,60 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<div class="products">
+<div class="container">
+ <!--  <div class="row"> -->
+    <div class="col-md-5">
+      <div class="home">
+        <h1>
+          American Made<br />
+          3-Day Shipping<br />
+          Quality and Service
+        </h1>
+        <p>Your prime supplier for staples, eye hooks, eye bolts and custom wire hardware. We pride ourselves with one of the best fill rates in the industry. Larson has over 92 years in making quality products and providing quality service.</p>
+        <h3><i class="icon-chevron-right"></i><a href="">Browse products</a></h3>
+
+      </div>
+
+    </div>
+    <div class="col-md-7"  id="prod-grid">
+      <div class="col-md-3 col-sm-2 col-xs-6">
+        <%= image_tag 'prod1.gif', class: 'img-responsive' %>
+        <small><a href="#">Eye hooks</a></small>
+      </div>
+      <div class="col-md-3 col-sm-2 col-xs-6">
+        <%= image_tag 'prod2.gif', class: 'img-responsive' %>
+        <small><a href="#">Eye hooks</a></small>
+      </div>
+      <div class="col-md-3 col-sm-2 col-xs-6">
+        <%= image_tag 'prod3.gif', class: 'img-responsive' %>
+        <small><a href="#">Eye hooks</a></small>
+      </div>
+      <div class="col-md-3 col-sm-2 col-xs-6">
+        <%= image_tag 'prod1.gif', class: 'img-responsive' %>
+        <small><a href="#">Eye hooks</a></small>
+      </div>
+      <div class="col-md-3 col-sm-2 col-xs-6">
+        <%= image_tag 'prod1.gif', class: 'img-responsive' %>
+        <small><a href="#">Eye hooks</a></small>
+      </div>
+      <div class="col-md-3 col-sm-2 col-xs-6">
+        <%= image_tag 'prod2.gif', class: 'img-responsive' %>
+        <small><a href="#">Eye hooks</a></small>
+      </div>
+      <div class="col-md-3 col-sm-2 col-xs-6">
+        <%= image_tag 'prod3.gif', class: 'img-responsive' %>
+        <small><a href="#">Eye hooks</a></small>
+      </div>
+      <div class="col-md-3 col-sm-2 col-xs-6">
+        <%= image_tag 'prod1.gif', class: 'img-responsive' %>
+        <small><a href="#">Eye hooks</a></small>
+      </div>
+    </div>
+    
+ <!--  </div> -->
+
+</div>
+</div>
+
+<%= render 'ribbon' %>
+<%= render 'pre_footer' %>
+
+

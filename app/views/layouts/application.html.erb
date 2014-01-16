@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lars02Design</title>
+  <title>Larson Hardware Manufacturing Co.</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,100,400,300' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="row" id="top">
+    <div class="container">
+      <%= image_tag 'larson-logo-72.png' %>
+    </div>
+    <div class="navigation">
+      <div class="container">
+      <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    
+  </div>
 
-<%= yield %>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-align:right;">
+    <ul class="nav navbar-nav pull-right">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Custom Estimates</a></li>
+      <li><a href="#">Order</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
 
+
+
+
+
+    </div>
+  </div>
+  
+    <%= yield %>
+    
+    
+
+<div class="footer top-padding-20">
+  <div class="container">
+    <div class="col-md-6"><p>Larson Hardware Manufacturing Co.<br />
+        P.O. Box E - Sterling, IL 61081 </p>
+        <p>&copy; 2013 - All Rights Reserved</p>
+    </div>
+    <div class="col-md-6"><p><span class="pull-right">P: (815) 625-0503<br />
+                F: (815) 625-8786</span></p></div>
+
+    
+
+  </div>
+</div>
 </body>
 </html>

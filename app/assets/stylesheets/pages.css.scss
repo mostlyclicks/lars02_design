@@ -1,5 +1,5 @@
 @import "variables.css.scss";
-$robo-slab:"'Roboto Slab', serif";
+// $robo-slab:"'Roboto Slab', serif";
 
 body {
   background-color:lighten($light-brown, 45%);
@@ -30,12 +30,21 @@ body {
 
 ul.nav {height:40px;margin:0;padding:0;line-height:40px;font-family:'Roboto Slab', serif;font-weight:700;}
 .navbar-nav>li>a {
-        padding-top: 9px;
-        padding-bottom: 15px
-    }
+        padding-top: 9px !important;
+        padding-bottom: 0px;
+        color:$yellow;
+        height:40px;
+        margin:0;
+        line-height:20px;
+        text-shadow:none !important;
+        &:hover {
+          background-color:lighten($dark-blue, 20%) !important;
+          color:$white;
+        }
+    } 
 
 
-h1, h2, h3, p {font-family:'Roboto Slab', serif;}
+h1, h2, h3, p {font-family:'Roboto Slab', serif !important;}
 
 
 .top-padding-20 {
@@ -52,6 +61,8 @@ h1, h2, h3, p {font-family:'Roboto Slab', serif;}
     color:#ffffff;
   }
 }
+
+
 
 
 .product-top {
